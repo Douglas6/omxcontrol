@@ -7,4 +7,5 @@ Installation
 ------------
 
     git clone https://github.com/douglas6/omxcontrol.git
-    python omxcontrol/setup.py install
+    cd omxcontrol
+    python setup.py install
