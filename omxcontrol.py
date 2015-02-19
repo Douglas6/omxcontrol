@@ -99,6 +99,7 @@ class OmxControl:
 
     def quit(self):
         """Terminate the omsplayer process."""
+        self.__assertConnected()
         try: self.__iface_root.Quit()
         except dbus.exceptions.DBusException: pass
 
@@ -320,7 +321,6 @@ class OmxControl:
 
     def __parseList(self, itms):
         """Parse a omxplayer 'list' string into a list of dictionaries."""
-        self.__assertConnected()
         items = []
         for itm in itms:
             parms = itm.split(":")
