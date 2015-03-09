@@ -1,7 +1,9 @@
 omxcontrol.py
 =======
 
-Python2 module for control of the omxplayer
+Python2 module for control of the omxplayer. 
+
+See also https://github.com/willprice/python-omxplayer-wrapper for a similar project.
 
 Installation
 ------------
